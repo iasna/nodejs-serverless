@@ -1,7 +1,7 @@
 const Prometheus = require('prom-client')
 const express = require('express');
 const http = require('http');
-
+https://github.com/iasna/nodejs-serverless/blob/master/src/server.js
 Prometheus.collectDefaultMetrics();
 
 const requestHistogram = new Prometheus.Histogram({
@@ -52,7 +52,7 @@ app.use(require('pino-http')({logger: pino}));
 app.get('/', (req, res) => {	
   // Use req.log (a `pino` instance) to log JSON:	
   req.log.info({message: 'Hello from Node.js Starter Application!'});		
-  setTimeout(() => {  res.send('Hello from Node.js Starter Application v1.1 !')}, 1000);
+  setTimeout(() => {  res.send('Hello from Node.js Starter Application v1.2 !')}, 1000);
 
 });	
 
