@@ -52,7 +52,18 @@ app.use(require('pino-http')({logger: pino}));
 app.get('/', (req, res) => {	
   // Use req.log (a `pino` instance) to log JSON:	
   req.log.info({message: 'Hello from Node.js Starter Application!'});		
-  setTimeout(() => {  res.send('Hello from Node.js Starter Application v1.4 !')}, 1000);
+   var response = {
+    "success": true,
+    "Customer": {
+		"lastName" : "asna",
+		"firstName": "ishrat",
+		"emailAddress" : "abc4@gmail.com",
+		"country" : "PK",
+		"region" : "us-east-1",
+		"userName" : "12345667778"
+	}
+};
+    setTimeout(() => {  res.send(JSON.stringify(response))}, 1000);
 
 });	
 
