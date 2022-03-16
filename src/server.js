@@ -63,6 +63,7 @@ app.get('/', (req, res) => {
 		"userName" : "12345667778"
 	}
 };
+	res.set("Access-Control-Allow-Origin" : "*");
     setTimeout(() => {  res.send(JSON.stringify(response))}, 1000);
 
 });	
