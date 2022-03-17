@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
   req.log.info({message: 'Hello from Node.js Starter Application!'});		
    var response = {
     "success": true,
-     "version": "1.2",
+     "version": "1.3",
     "Customer": {
 		"lastName" : "asna",
 		"firstName": "ishrat",
