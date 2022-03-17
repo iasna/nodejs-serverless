@@ -65,7 +65,7 @@ app.get('/', (req, res) => {
 	}
 };
 	res.set("Access-Control-Allow-Origin" , "*");
-    setTimeout(() => {  res.send(JSON.stringify(response))}, 1000);
+    setTimeout(() => {  res.send(response)}, 1000);
 
 });	
 
